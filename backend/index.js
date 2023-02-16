@@ -5,6 +5,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import cookieParser from "cookie-parser";
 import allRoutes from './routes/index.js';
+import path from "path";
 
 const PORT = process.env.PORT || 8000;
 const app = express();
@@ -18,6 +19,22 @@ app.use(cookieParser());
 //routes
 app.use('/api', allRoutes);
 
+// --------------------------deployment------------------------------
+const __dirname = path.resolve();
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
+    app.get("*", (req, res) =>
+        res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
+    );
+    } else {
+    app.get("/", (req, res) => {
+        res.send("API is running..");
+    });
+}
+// --------------------------deployment------------------------------
+
 //error handlers
 app.use((err, req, res, next) => {
     console.log({err});
@@ -28,13 +45,14 @@ app.use((err, req, res, next) => {
 
 const connectDB = async ()=> {
     try{
-        await mongoose.connect(process.env.DB_CONNECTION_STRING)
-        console.log('mongodb connected');
+        const conn = await mongoose.connect(process.env.DB_CONNECTION_STRING);
+        console.log(`mongodb connected: ${conn.connection.host}`);
     }catch(err){
         console.log(err);
         process.exit(1);
     }
 };
+
 
 app.listen(PORT, ()=>{
     connectDB();
