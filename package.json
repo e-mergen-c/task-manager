@@ -1,12 +1,12 @@
 {
-	"name": "backend",
+	"name": "task-manager",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"dev": "nodemon index.js",
-		"start": "node index.js",
+		"dev": "nodemon backend/index.js",
+		"start": "node backend/index.js",
 		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
 	},
 	"keywords": [],
@@ -23,9 +23,6 @@
 		"morgan": "^1.10.0"
 	},
 	"devDependencies": {
-		"eslint": "^8.34.0",
-		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-plugin-import": "^2.27.5",
 		"nodemon": "^2.0.20"
 	}
 }
