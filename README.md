@@ -7,6 +7,14 @@ This is a task-manager app built using the MERN stack (MongoDB, Express, React, 
 ### Live Preview
 You can access the live preview of this app at [https://taskmergen.com/auth.](https://taskmergen.com/auth)
 
+### Features
+This app includes the following features:
+
+- User authentication and authorization using JSON Web Tokens (JWT)
+- Update user information such as name and password
+- Create, read, update, and delete to-do items
+- Responsive design for mobile and desktop devices
+
 ### Screenshots
 Login page
 ![login](https://user-images.githubusercontent.com/110077044/219827850-5e4fc3eb-0e5b-4547-8d1c-2c89157d4363.png)
@@ -19,14 +27,6 @@ Edit profile page
 
 Request responses
 ![request_feedback](https://user-images.githubusercontent.com/110077044/219827880-c2ef6505-3f7d-4ea1-9657-f8d5943ce304.png)
-
-### Features
-This app includes the following features:
-
-- User authentication and authorization using JSON Web Tokens (JWT)
-- Update user information such as name and password
-- Create, read, update, and delete to-do items
-- Responsive design for mobile and desktop devices
 
 ### Technologies Used
 This app was built using the following technologies:
