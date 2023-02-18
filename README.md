@@ -1,6 +1,7 @@
 # Task-Manager MERN stack app with user authorization
 
 This is a task-manager app built using the MERN stack (MongoDB, Express, React, and Node.js) with user authorization. The app allows users to create, read, update, and delete to-do items, and requires users to sign up and log in before they can access the app.
+
 *Note: You don't have to use a real email address to register on this app. It was done for convenience during testing, but any valid email address format will work.
 
 ### Live Preview
@@ -22,20 +23,20 @@ Request responses
 ### Features
 This app includes the following features:
 
-User authentication and authorization using JSON Web Tokens (JWT)
-Update user information such as name and password
-Create, read, update, and delete to-do items
-Responsive design for mobile and desktop devices
+- User authentication and authorization using JSON Web Tokens (JWT)
+- Update user information such as name and password
+- Create, read, update, and delete to-do items
+- Responsive design for mobile and desktop devices
 
 ### Technologies Used
 This app was built using the following technologies:
 
-MongoDB and Mongoose for the database
-Express.js for the server
-React.js for the client
-Node.js for the server-side JavaScript runtime
-JSON Web Tokens (JWT) and cookie-parser for user authentication and authorization
-Morgan and cors for middleware functions
+- MongoDB and Mongoose for the database
+- Express.js for the server
+-React.js for the client
+- Node.js for the server-side JavaScript runtime
+- JSON Web Tokens (JWT) and cookie-parser for user authentication and authorization
+- Morgan and cors for middleware functions
 
 ### Credits
 This app was built by [Mergen Ganbaatar](https://github.com/e-mergen-c) as a Personal Project. Special thanks to [Person/Resource](https://github.com/maxyong7) for their help and inspiration.
