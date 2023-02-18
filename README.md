@@ -39,4 +39,4 @@ This app was built using the following technologies:
 - Morgan and cors for middleware functions
 
 ### Credits
-This app was built by [Mergen Ganbaatar](https://github.com/e-mergen-c) as a Personal Project. Special thanks to [Person/Resource](https://github.com/maxyong7) for their help and inspiration.
+This app was built by [Mergen Ganbaatar](https://github.com/e-mergen-c) as a Personal Project. Special thanks to [Max](https://github.com/maxyong7) for their help and inspiration.
